@@ -5,6 +5,7 @@
 This analysis seeks to create a neural network to predict which organizations are going to use donations from Alphabet Soup, a charity organization, in an impactful way.
 
 
+
 ## Results
 
 * Target of the analysis is to see if the donation is successfully helping the organization. 
@@ -23,6 +24,7 @@ This analysis seeks to create a neural network to predict which organizations ar
 * We add one more hidden layer (the third one), more neurons on each hidden layer, more epochs, take out “SPECIAL_CONSIDERATION” as feature and change the output activation function to tanh.
 
 *  I was unable to achieve the target model performance of 75%, but was close at 72%
+
 
 
 ## Summary
