@@ -2,35 +2,32 @@
 
 
 ## Overview of Project
+This analysis seeks to create a neural network to predict which organizations are going to use donations from Alphabet Soup, a charity organization, in an impactful way.
 
-In this scenario, Alphabet Soup is non-profit foundation and has been donated to a lot of organizations. They would like to know how those donations are doing to the organizations. We decide to use neural network machine learning to analyze the data. 
+----
 
+## Results
 
-### Results
+* Target of the analysis is to see if the donation is successfully helping the organization. 
 
-* The target for the analysis is to see if the donation is successfully helping the organization. To be exact, the target variable is ìIS_SUCCEFULî. 
-
-* We keep below features for our model: 
-       îAFFILIATIONî,ìAPPLICATION_TYPEî, îUSE_CASEî, îORGANIZATIONî, 
-       îSTATUSî, ìINCOME_AMTî, ìSPECIAL_CONSIDERATION, ìASK_AMTî, 
-       IS_SUCCESSFUL. We took our ìSPECIAL_CONSIDERATIONî in the optimal 
+* Features of the model are:
+       ‚ÄùAFFILIATION‚Äù,‚ÄúAPPLICATION_TYPE‚Äù, ‚ÄùUSE_CASE‚Äù, ‚ÄùORGANIZATION‚Äù, 
+       ‚ÄùSTATUS‚Äù, ‚ÄúINCOME_AMT‚Äù, ‚ÄúSPECIAL_CONSIDERATION, ‚ÄúASK_AMT‚Äù, 
+       IS_SUCCESSFUL. We took our ‚ÄúSPECIAL_CONSIDERATION‚Äù in the optimal 
        version because there are only 27 for Y but the rest of the data 
        have N.
 
-* We took our EIN and NAME out from the features.  They are just IDs for the data and canít provide the actual impact on if the donation is successful to the organization or not. 
+* EIN and NAME are taken out of the features.  They are just IDs for the data and can‚Äôt provide the actual impact on if the donation is successful to the organization or not. 
 
-* We have three hidden layers in the optimal version and each layer has 90,40 and 30 neurons respectively. We stick sigmoid for our output activation function is because it is good for binary classification which is our target for the analysis. We change the hidden layer activation function to tanh ñ it is a slightly complicated activation function.
+* We have three hidden layers in the optimal version and each layer has 90,40 and 30 neurons respectively. We stick sigmoid for our output activation function is because it is good for binary classification which is our target for the analysis. We change the hidden layer activation function to tanh ‚Äì it is a slightly complicated activation function.
 
-* I couldnít achieve the target 75% accuracy. But we did it close enough -around 72%.
+* We add one more hidden layer (the third one), more neurons on each hidden layer, more epochs, take out ‚ÄúSPECIAL_CONSIDERATION‚Äù as feature and change the output activation function to tanh.
 
-* We add one more hidden layer (the third one), more neurons on each hidden layer, more epochs, take out ìSPECIAL_CONSIDERATIONî as feature and change the output activation function to tanh.
+*  I was unable to achieve the target model performance of 75%, but was close at 72%
 
- 
+----
 
-### Summary
+## Summary
 
-The optimal version result is very close to the original version. I have tried different steps to improve the model, however, it is still hard to see the improvement of the model. We might need more data or other effective data to train the model.
-
-It is very time-consuming to train the model. In comparison, this data is still smaller and less feature than the real-world complicated (or size with millions counts database). I would suggest using random forest model. We would have save a lot of time and might achieve the same goal.
-
+The optimal version result is very close to the original version. this model is a fair model for predicting which organizations are low risk to donate to.. This model could be improved by looking into the most beneficial number of hidden layers or by looking at the dataset and removing any extreme outliers. However, it is time-consuming to train the model. In comparison, this data is still smaller and has less features than the real-world complicated data(or size with millions counts database). Random forest model will help us save time and achieve the same goal.
  
