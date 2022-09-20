@@ -4,7 +4,6 @@
 ## Overview of Project
 This analysis seeks to create a neural network to predict which organizations are going to use donations from Alphabet Soup, a charity organization, in an impactful way.
 
-----
 
 ## Results
 
@@ -25,7 +24,6 @@ This analysis seeks to create a neural network to predict which organizations ar
 
 *  I was unable to achieve the target model performance of 75%, but was close at 72%
 
-----
 
 ## Summary
 
