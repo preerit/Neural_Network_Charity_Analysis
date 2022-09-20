@@ -29,5 +29,9 @@ This analysis seeks to create a neural network to predict which organizations ar
 
 ## Summary
 
-The optimal version result is very close to the original version. this model is a fair model for predicting which organizations are low risk to donate to.. This model could be improved by looking into the most beneficial number of hidden layers or by looking at the dataset and removing any extreme outliers. However, it is time-consuming to train the model. In comparison, this data is still smaller and has less features than the real-world complicated data(or size with millions counts database). Random forest model will help us save time and achieve the same goal.
+* The optimal version result is very close to the original version. This model is a fair model for predicting which organizations are low risk to donate to.
+
+* This model could be improved by looking into the most beneficial number of hidden layers or by looking at the dataset and removing any extreme outliers.
+
+* However, it is time-consuming to train the model. In comparison, this data is still smaller and has less features than the real-world complicated data(or size with millions counts database). Random forest model will help us save time and achieve the same goal.
  
